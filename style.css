@@ -1,4 +1,5 @@
 body {
+	width:100%;
 	background-image:"http://i.imgur.com/RWZ6V2c.gif";
 	background-size: cover;
 	background-position: center center;
@@ -8,9 +9,15 @@ body {
 	height:100vh;
 	z-index:-50;
 }
-
+body, html{
+	min-height:100%;
+}
+.parahraph{
+	width:100%;
+	max-width:960px;
+}
 .container {
-	width:960px;
+	width:900px;
 	margin:0 auto;	
 }
 .header {
@@ -103,12 +110,16 @@ a:hover {
   min-height: 50%;
 }
 /*background pic for portfolio */
-#bgc {
- position: fixed;
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
+#bgc { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+h2{
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
 }
 #bgc img {
   position:fixed; 
